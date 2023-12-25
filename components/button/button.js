@@ -40,6 +40,10 @@ class Button extends HTMLElement {
       return this.getAttribute('text-hover') || '#fff';
   }
 
+  isDisabled() {
+    return this.hasAttribute('disabled');
+}
+
   render() {
       this.shadowRoot.innerHTML = `
         <style>
@@ -65,7 +69,7 @@ class Button extends HTMLElement {
             color: ${this.getTextHoverColor()};
           }
         </style>
-        <button type="button"><slot>Click Me!</slot></button>
+        <button type="button" ${this.isDisabled() ? 'disabled' : ''}><slot>Click Me!</slot></button>
       `;
   }
 }
