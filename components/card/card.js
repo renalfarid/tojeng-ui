@@ -5,7 +5,7 @@ class Card extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ['size', 'image'];
+        return ['size', 'image', 'bg-color', 'text-color'];
     }
 
     connectedCallback() {
@@ -40,6 +40,8 @@ class Card extends HTMLElement {
         const paddingSize = sizeMapping[this.getSize()] || sizeMapping['sm'];
         const widthSize = widthMapping[this.getSize()] || widthMapping['sm'];
         const imageSrc = this.getAttribute('image');
+        const bgColor = this.getAttribute('bg-color') || '#ffffff';
+        const textColor = this.getAttribute('text-color') || '#000000';
 
         this.shadowRoot.innerHTML = `
           <style>
@@ -51,6 +53,8 @@ class Card extends HTMLElement {
               display: flex;
               flex-direction: column;
               align-items: center;
+              background-color: ${bgColor};
+              color: ${textColor};
             }
 
             .card:hover {
@@ -73,18 +77,6 @@ class Card extends HTMLElement {
 
             ::slotted([slot="content"]) {
               text-align: justify;
-            }
-
-            .card-links {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: flex-end; /* Left alignment */
-              margin-top: 10px;
-            }
-
-            .card-link {
-              margin-bottom: 5px;
             }
           </style>
           <div class="card">
