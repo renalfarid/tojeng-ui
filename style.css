@@ -25,3 +25,12 @@
     padding: 10px;
     border-color: #efd1ce;
   }
+
+  #card-group {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #3498db;
+    margin: 5px;
+    padding: 10px;
+    border-color: #efd1ce;
+  }

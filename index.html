@@ -7,6 +7,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="components/button/button.js" type="text/javascript" defer></script>
+    <script src="components/card/card.js" type="text/javascript" defer></script>
   </head>
   <body>
     
@@ -24,6 +25,34 @@
           <i class="icon-shopping-cart icon-large"></i>
           Checkout
         </button-ui>
+      </section>
+
+      <section id="card-group" class="card-group">
+        <card-ui size="sm" image="images/image-cap.svg">
+          <div slot="title" style="font-weight: bold;">Card Title</div>
+          <div slot="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </card-ui>
+        <card-ui size="md">
+          <div slot="title" style="font-weight: bold;">Card Title</div>
+          <div slot="content" style="text-align: center;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div slot="links">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </card-ui>
+        <card-ui size="xl">
+          <div slot="title" style="font-weight: bold;">Card Title</div>
+          <div slot="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div slot="links">
+            <button-ui primary-color="#f44336" size="sm" bg-hover="#f44336" text-hover="#fff" rounded onclick="handleSend()"> Buy </button-ui>
+          </div>
+        </card-ui>
       </section>
       
       <!-- Your page's content --> 
