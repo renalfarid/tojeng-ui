@@ -34,3 +34,35 @@
     padding: 10px;
     border-color: #efd1ce;
   }
+
+  /* Default styles for all screen sizes */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style adjustments for screens less than or equal to 600px wide (mobile) */
+@media only screen and (max-width: 600px) {
+  #button-group,
+  #card-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button-ui {
+    margin-bottom: 10px;
+  }
+
+  card-ui {
+    margin-bottom: 20px;
+  }
+}
+
+/* Style adjustments for screens between 601px and 1024px wide (tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  #button-group,
+  #card-group {
+    justify-content: space-around;
+  }
+}

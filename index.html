@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Tojeng UI - Reusable UI Component</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,29 +14,31 @@
     
     <main>
       <section id="button-group" class="button-group">
-        <button-ui primary-color="#f44336" size="sm" disabled onclick="handleSend()">
+        <h2>Buttons</h2>
+        <button-ui primary-color="#f2476a" size="sm" disabled onclick="handleSend()">
           <i class="icon-shopping-cart icon-large"></i>
           Checkout
         </button-ui>
-        <button-ui primary-color="#f44336" size="sm" bg-hover="#f44336" text-hover="#fff" rounded onclick="handleSend()">
+        <button-ui primary-color="#f2476a" size="sm" bg-hover="#f44336" text-hover="#fff" rounded onclick="handleSend()">
           <i class="icon-shopping-cart icon-large"></i>
           Buy
         </button-ui>
-        <button-ui primary-color="#5cb85c" size="md" bg-hover="#5cb85c" text-hover="#fff" rounded onclick="handleSend()">
+        <button-ui primary-color="#90ee90" size="md" bg-hover="#5cb85c" text-hover="#fff" rounded onclick="handleSend()">
           <i class="icon-shopping-cart icon-large"></i>
           Checkout
         </button-ui>
-        <button-ui primary-color="#3498db" size="xl" bg-hover="#337ab7" text-hover="#fff" rounded onclick="handleSend()">
+        <button-ui primary-color="#add8e6" size="xl" bg-hover="#337ab7" text-hover="#fff" rounded onclick="handleSend()">
           <i class="icon-shopping-cart icon-large"></i>
           Smart Buy
         </button-ui>
-        <button-ui primary-color="#3498db" size="xl" bg-hover="#337ab7" text-hover="#fff" onclick="handleSend()">
+        <button-ui primary-color="#add8e6" size="xl" bg-hover="#337ab7" text-hover="#fff" onclick="handleSend()">
           <i class="icon-shopping-cart icon-large"></i>
           Checkout
         </button-ui>
       </section>
 
       <section id="card-group" class="card-group">
+        <h2>Cards</h2>
         <card-ui size="sm" image="images/image-cap.svg" bg-color="#3498db" text-color="#fff">
           <div slot="title" style="font-weight: bold;">Card Title</div>
           <div slot="content">
@@ -58,7 +61,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </div>
           <div slot="links">
-            <button-ui primary-color="#f44336" size="sm" bg-hover="#f44336" text-hover="#fff" onclick="handleSend()"> Buy </button-ui>
+            <button-ui primary-color="#f2476a" size="sm" bg-hover="#e5a3a3" text-hover="#fff" onclick="handleSend()"> Buy </button-ui>
           </div>
         </card-ui>
       </section>
